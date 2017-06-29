@@ -1,0 +1,77 @@
+#collection-59484485c534a560c640e9c5 {
+    .Content-outer {
+        &:not(.dark-background) {
+            background: white;
+        }
+        &.dark-background {
+            background: @dark-grey;
+        }
+    }
+    #banner {
+        background: @cyan;
+        .light;
+    }
+    #part-search {
+        .toggle-menu(black);
+        .mobile-toggle-menu(1024px);
+    }
+    #parts-render {
+        transition: opacity 0.3s;
+        &.loading {
+            opacity: 0;
+        }
+    }
+    #your-company-and-brand {
+        .Index-page-content {
+            opacity: 1 !important;
+            transition: opacity 0.4s 0.2s;
+        }
+    }
+    #parts-search,
+    #your-parts {
+        .hide-pages;
+    }
+    #your-company-and-brand,
+    #parts-search,
+    #your-parts {
+        .page-transitions;
+    }
+    #take-control-of-your-content-business {
+        .toggle-menu(white);
+        .mobile-toggle-menu(710px);
+        @media screen and (max-width: 600px) {
+            h3 {
+                font-size: 0.7em !important;
+            }
+        }
+        @media screen and (min-width:601px) and (max-width:1024px) {
+            h3 {
+                font-size: 2.3vw;
+            }
+        }
+        a {
+            &.static {
+                border-color: rgba(29, 29, 29, 0) !important;
+            }
+            &:hover {
+                border-color: @red !important;
+            }
+        }
+        .dark;
+    }
+    #design {
+        .dark;
+        .page-transitions;
+        .Index-page-content {
+            opacity: 1 !important;
+            transition: opacity 0.4s 0.2s;
+        }
+    }
+    #parts-content,
+    #analytics,
+    #ecommerce {
+        .dark;
+        .hide-pages;
+        .page-transitions;
+    }
+}

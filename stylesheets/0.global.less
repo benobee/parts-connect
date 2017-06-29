@@ -1,0 +1,124 @@
+.sqs-edit-mode-active {
+    #testimonials {
+        p {
+            padding: 1em;
+            margin: 0.5em;
+        }
+    }
+}
+
+//global class, move to top if needed on other pages
+.hide-pages {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+}
+
+.toggle-menu(@hoverColor) {
+    .sqs-col-4:first-child,
+    .sqs-col-3:first-child {
+        a {
+            border-color: @red;
+        }
+    }
+    a {
+        border-width: 3px;
+        border-color: rgba(29, 29, 29, 0);
+        &.active {
+            border-color: @red;
+        }
+        &.static {
+            border-color: rgba(29, 29, 29, 0) !important;
+        }
+        &:hover {
+            border-color: @red !important;
+            color: @hoverColor;
+        }
+    }
+}
+
+.page-transitions {
+    transition: opacity 0.6s !important;
+    .Index-page-content {
+        opacity: 0;
+        transition: opacity 0.4s 0.13s;
+    }
+    &.hidden {
+        .hide-pages;
+        .Index-page-content {
+            opacity: 0;
+        }
+    }
+    &.active {
+        opacity: 1;
+        visibility: visible;
+        height: 100%;
+        .Index-page-content {
+            opacity: 1;
+        }
+    }
+}
+
+.dark {
+    background: #2F2F2F;
+    hr {
+        opacity: 0.3;
+    }
+    h1 {
+        color: white;
+    }
+    h2 {
+        color: #e2e2d3;
+    }
+    h3 {
+        color: #e2e2d3;
+    }
+    p {
+        color: #e2e2d3;
+    }
+}
+
+.light {
+    h1 {
+        color: white;
+    }
+    h2 {
+        color: #e2e2d3;
+    }
+    h3 {
+        color: #e2e2d3;
+    }
+    p {
+        color: white;
+    }
+    .sqs-block-button-element {
+        background: @red;
+        color: white;
+        border-radius: 3px;
+    }
+}
+
+.mobile-toggle-menu(@break) {
+    @media screen and (max-width: @break) {
+        .sqs-row {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .sqs-col-3 {
+            width: 50% !important;
+            h3 {
+                font-size: 2.5vw;
+                white-space: nowrap;
+            }
+        }
+        .sqs-col-4 {
+            width: 33.33% !important;
+            h3 {
+                font-size: 2.5vw;
+                white-space: nowrap;
+            }
+        }
+    }
+}

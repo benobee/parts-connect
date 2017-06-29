@@ -1,0 +1,94 @@
+#collection-59483cda3e00be46a7adbbd8 {
+    #features {
+        .design-layout-card {
+            @media screen and (max-width: 768px) {
+                display: flex;
+                flex-direction: column;
+                .intrinsic,
+                .image-card-wrapper {
+                    width: 100% !important;
+                }
+            }
+        }
+        .image-block:nth-child(2) {
+            .image-card-wrapper {
+                .image-card {
+                    .image-subtitle-wrapper {
+                        p:first-child {
+                            margin: 0;
+                            padding-bottom: 0.5em;
+                        }
+                        p {
+                            border-bottom: 1px solid #e0e0e0;
+                        }
+                        p:nth-child(n+2) {
+                            padding-top: 0.5em;
+                            padding-bottom: 0.5em;
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #testimonials {
+        background: #94CBD4;
+        .sqs-col-4 {
+            .sqs-block {
+                max-width: 450px;
+                margin: 0 auto;
+            }
+            @media screen and (max-width:1024px) {
+                width: 100%;
+                margin-bottom: 2em;
+                figure {
+                    blockquote {
+                        height: 200px;
+                    }
+                }
+            }
+            .sqs-block-html {
+                padding: 0.25em 2em;
+                padding-left: 40%;
+                p {
+                    line-height: 1.2em;
+                    margin: 0;
+                    color: black;
+                    font-weight: 400;
+                    font-size: 0.88em;
+                }
+            }
+        }
+        figure {
+            margin-bottom: 0;
+            position: relative;
+            blockquote {
+                background-color: white;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+                min-height: 330px;
+                box-shadow: 0px 3px 8px hsla(204, 65%, 9%, 0.4);
+                color: grey;
+                padding: 4em;
+                &:after {
+                    content: "";
+                    background-image: url(https://static1.squarespace.com/static/57f2b00f197aeac4af35ca7c/t/594c5f98579fb3c3398c8528/1498177432157/point.png);
+                    background-repeat: no-repeat;
+                    background-position: left bottom;
+                    background-size: contain;
+                    width: 85px;
+                    height: 85px;
+                    position: absolute;
+                    left: 15%;
+                    bottom: -65px;
+                }
+                border-radius:10px;
+                span {
+                    display: none;
+                }
+            }
+        }
+    }
+}
